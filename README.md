@@ -4,22 +4,23 @@ Script and toolchain file to build macchina.io REMOTE Gateway for Elastel device
 
 ## Prerequisites
 
-  - The Elastel toolchain (`gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu.tar.gz`)
-  - CMake
-  - Ninja
+  - The Elastel toolchain (`gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu.tar`)
+  - Ubuntu 20.04 (or newer)
+  - [CMake](https://cmake.org)
+  - [Ninja](https://ninja-build.org)
   - Git
 
 
 ## Install Required Packages
 
 ```
-sudo apt install git cmake ninja-build
+sudo apt update && sudo apt install -y git cmake ninja-build
 ```
 
 ## Extract Elastel Toolchain
 
 ```
-tar xfz gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu.tar.gz
+tar xf gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu.tar
 ```
 
 ## Clone this Repository
